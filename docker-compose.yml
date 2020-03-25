@@ -14,8 +14,11 @@ services:
       - db
     ports:
       - "8069:8069"
+    command: -- --update=openacademy
     tty: true
     volumes:
       - ./addons:/mnt/extra-addons
       - ./etc:/etc/odoo
     restart: always   
+
+
